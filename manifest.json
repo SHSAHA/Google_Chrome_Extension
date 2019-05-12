@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+
+	"name": "Pomodoro",
+	"description": "This extension is a timer based on the Pomodoro Technique",
+	"version": "2.0",
+
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "Tomato: Pomodoro Timer"
+	},
+	"background": {
+		"scripts": ["pomodoroState.js", "breakState.js", "moment.js", "background.js"],
+		"persistent": false
+	},
+	"permissions": [
+		"notifications",
+		"http://aws.random.cat/meow"
+	]
+}
